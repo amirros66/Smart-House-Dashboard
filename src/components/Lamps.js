@@ -16,14 +16,15 @@ export default function Lamps() {
   return (
     <>
       <div className="lamps-container">
-        <h3 className="lamp-function">Control Lamps</h3>
         {allLamps.map((lamp) => (
           <div className="lamps-box" key={lamp.id}>
             <p className="lamp-number">Lamp {lamp.id}</p>
-            <p>Power: {lamp.power}</p>
-            <button onClick={() => handleToggle(lamp.id)}>
-              {lamp.power ? "On" : "Off"}
-            </button>
+            <p>
+              Power: {lamp.power}
+              <button onClick={() => handleToggle(lamp.id)}>
+                {lamp.power ? "On" : "Off"}
+              </button>
+            </p>
           </div>
         ))}
       </div>
