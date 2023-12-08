@@ -26,7 +26,7 @@ export default function Radio() {
         <div className="radio-box">
           <p>
             Power: {power}
-            <button onClick={handleToggle}>{power ? "Off" : "On"}</button>
+            <button onClick={handleToggle}>{power ? "On" : "Off"}</button>
           </p>
           <p>Current Genre: {genre}</p>
           <input
