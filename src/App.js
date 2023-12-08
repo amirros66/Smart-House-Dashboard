@@ -1,5 +1,6 @@
 import "./App.css";
 import Lamps from "./components/Lamps";
+import Radio from "./components/Radio";
 import Thermostat from "./components/Thermostat";
 
 // import Radio from "./components/Radio";
@@ -12,9 +13,10 @@ function App() {
       <Thermostat />
       <br></br>
       <br></br>
-      <h2>Control Lamps</h2>
       <Lamps />
-      {/* <Radio /> */}
+      <br></br>
+      <br></br>
+      <Radio />
     </div>
   );
 }

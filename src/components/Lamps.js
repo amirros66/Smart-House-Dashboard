@@ -15,6 +15,7 @@ export default function Lamps() {
 
   return (
     <>
+      <h2>Control Lamps</h2>
       <div className="lamps-container">
         {allLamps.map((lamp) => (
           <div className="lamps-box" key={lamp.id}>

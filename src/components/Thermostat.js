@@ -26,7 +26,7 @@ export default function Thermostat() {
       <h2>Thermostat</h2>
       <div className="thermostat-container">
         <div className="thermostat-box">
-          <p>Current Temperature: {thermostatHeat}</p>
+          <p>Current Temperature: {thermostatHeat}°C</p>
           <button onClick={handleIncrease}>Increase</button>
           <button onClick={handleDecrease}>Decrease</button>
         </div>
