@@ -23,7 +23,7 @@ export default function Thermostat() {
 
   return (
     <>
-      <h2>Thermostat</h2>
+      <h2>Control Thermostat</h2>
       <div className="thermostat-container">
         <div className="thermostat-box">
           <p>Current Temperature: {thermostatHeat}°C</p>

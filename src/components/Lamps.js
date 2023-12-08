@@ -23,7 +23,7 @@ export default function Lamps() {
             <p>
               Power: {lamp.power}
               <button onClick={() => handleToggle(lamp.id)}>
-                {lamp.power ? "On" : "Off"}
+                {lamp.power ? "On 💡" : "Off"}
               </button>
             </p>
           </div>
