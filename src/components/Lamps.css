@@ -1,0 +1,21 @@
+.lamps-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.lamps-box {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  width: 200px; /* Set a width for each card box */
+}
+
+.lamps-function {
+  justify-content: center;
+}
+
+.lamp-number {
+  font-weight: bold;
+}
