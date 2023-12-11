@@ -16,5 +16,3 @@ export default function PowerConsumption() {
     </>
   );
 }
-
-//need to display the total power consumption when user selects if appliances are on or off
