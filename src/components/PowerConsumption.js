@@ -4,11 +4,14 @@ import { selectTotalPowerUsage } from "../store/selectors";
 
 export default function PowerConsumption() {
   const powerConsumptionTotal = useSelector(selectTotalPowerUsage);
+
   return (
     <>
       <h4>
-        Total current power consumption: {powerConsumptionTotal} | Maximum power
-        consumption: 100pu
+        Total current power consumption:{" "}
+        {powerConsumptionTotal <= 100
+          ? powerConsumptionTotal
+          : "Error - cannot exceed 100 power units! Decrease power consumption."}
       </h4>
     </>
   );
