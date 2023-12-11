@@ -5,12 +5,12 @@
 
 import { selectRadio } from "../store/radio/selectors";
 import { selectLamps } from "../store/lamps/selectors";
-// import { selectThermostatSetting } from "../store/thermostat/selectors";
+import { selectThermostatSetting } from "../store/thermostat/selectors";
 import { createSelector } from "@reduxjs/toolkit";
 
 const selectTotalPowerUsage = createSelector(
-  [selectRadio, selectLamps /*selectThermostatSetting*/],
-  (radio, lamps /*thermostat*/) => {
+  [selectRadio, selectLamps, selectThermostatSetting],
+  (radio, lamps, thermostat) => {
     const lampPower = lamps
       .map((lamp) => lamp.powerUnits)
       .reduce((total, powerUnits) => total + powerUnits, 0);
@@ -21,7 +21,7 @@ const selectTotalPowerUsage = createSelector(
     //reduce Function:
     // The reduce function is then used to sum up the values in the newly created array of powerUnits.
     // The initial value of the accumulator (total) is set to 0.
-    return radio.powerUnits + lampPower /* + thermostat.powerUnits */;
+    return radio.powerUnits + lampPower + thermostat.powerUnits;
   }
 );
 

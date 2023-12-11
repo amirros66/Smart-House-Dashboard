@@ -10,7 +10,8 @@ import "./Thermostat.css";
 // - Note: the state of the thermostat has to be managed by Redux
 
 export default function Thermostat() {
-  const thermostatHeat = useSelector(selectThermostatSetting);
+  const { temperature } = useSelector(selectThermostatSetting);
+
   const dispatch = useDispatch();
 
   const handleIncrease = () => {
@@ -26,7 +27,7 @@ export default function Thermostat() {
       <h2>Control Thermostat</h2>
       <div className="thermostat-container">
         <div className="thermostat-box">
-          <p>Current Temperature: {thermostatHeat}°C</p>
+          <p>Current Temperature: {temperature}°C</p>
           <button onClick={handleIncrease}>Increase</button>
           <button onClick={handleDecrease}>Decrease</button>
         </div>
