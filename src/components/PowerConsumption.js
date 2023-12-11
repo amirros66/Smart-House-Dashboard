@@ -6,7 +6,10 @@ export default function PowerConsumption() {
   const powerConsumptionTotal = useSelector(selectTotalPowerUsage);
   return (
     <>
-      <h3>Total current power consumption: {powerConsumptionTotal}</h3>
+      <h4>
+        Total current power consumption: {powerConsumptionTotal} | Maximum power
+        consumption: 100pu
+      </h4>
     </>
   );
 }
