@@ -4,8 +4,6 @@ import PowerConsumption from "./components/PowerConsumption";
 import Radio from "./components/Radio";
 import Thermostat from "./components/Thermostat";
 
-// import Radio from "./components/Radio";
-
 function App() {
   return (
     <div className="App">

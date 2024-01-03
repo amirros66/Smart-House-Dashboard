@@ -1,4 +1,5 @@
 //redux store
+//AKA combined root reducer
 
 import { configureStore } from "@reduxjs/toolkit";
 import lampsReducer from "./lamps/slice";
